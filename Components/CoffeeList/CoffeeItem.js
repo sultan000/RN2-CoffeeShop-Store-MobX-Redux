@@ -16,11 +16,7 @@ class CoffeeItem extends Component {
     return (
       <ImageBackground source={coffeeShop.background} style={styles.background}>
         <View style={styles.overlay} />
-        <ListItem
-          button
-          onPress={() => this.handlePress()}
-          style={styles.listitem}
-        >
+        <ListItem button onPress={this.handlePress} style={styles.listitem}>
           <Card style={styles.transparent}>
             <CardItem style={styles.transparent}>
               <Left>
