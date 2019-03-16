@@ -11,15 +11,15 @@ import CoffeeItem from "./CoffeeItem";
 
 class CoffeeList extends Component {
   render() {
-    let ListItems;
+    let listItems;
     if (coffeeshops) {
-      ListItems = coffeeshops.map(coffeeShop => (
+      listItems = coffeeshops.map(coffeeShop => (
         <CoffeeItem coffeeShop={coffeeShop} key={coffeeShop.id} />
       ));
     }
     return (
       <Content>
-        <List>{ListItems}</List>
+        <List>{listItems}</List>
       </Content>
     );
   }
