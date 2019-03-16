@@ -22,7 +22,7 @@ import coffeeshops from "../CoffeeList/list";
 
 class CoffeeDetail extends Component {
   state = {
-    drink: "Coffee",
+    drink: "Cappuccino",
     option: "Small"
   };
 
