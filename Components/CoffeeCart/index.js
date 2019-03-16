@@ -7,7 +7,7 @@ import CartItem from "./CartItem";
 
 class CoffeeCart extends Component {
   state = {
-    list: [
+    items: [
       {
         drink: "Latte",
         option: "Small",
@@ -21,17 +21,17 @@ class CoffeeCart extends Component {
     ]
   };
   render() {
-    let coffeeshops = this.state.list;
-    let content;
-    if (coffeeshops) {
-      content = coffeeshops.map((item, index) => (
+    let items = this.state.items;
+    let cartItems;
+    if (items) {
+      cartItems = items.map((item, index) => (
         <CartItem item={item} key={index} />
       ));
     }
 
     return (
       <List>
-        {content}
+        {cartItems}
         <Button full danger>
           <Text>Checkout</Text>
         </Button>

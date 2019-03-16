@@ -8,9 +8,9 @@ import { ListItem, Card, CardItem, Thumbnail, Text, Left } from "native-base";
 import styles from "./styles";
 
 class CoffeeItem extends Component {
-  handlePress() {
+  handlePress = () => {
     alert("Pressed");
-  }
+  };
   render() {
     const { coffeeShop } = this.props;
     return (
